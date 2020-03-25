@@ -18,15 +18,20 @@
     mkdir src
     cd src
     mkdir database
-    
+    cd database
+    mkdir migrations 
 
 > NOTE: Edit the knexfile.js
 
     development: {
         client: 'sqlite3',
         connection: {
-        filename: './src/database/db.sqlite'
-        }
+            filename: './src/database/db.sqlite'
+        },
+        migrations: {
+            directory: './src/database/migrations'
+        },
+        useNullAsDefault: true,
     }
 
 ### Files
@@ -34,9 +39,29 @@
     create -> src/index.js
     create -> routes.js
 
+### Database
+
+    npx knex migrate:make create_ongs
+    edit -> generated file in src/database/migrations/20200.._create_ongs.js
+    npx knex migrate:latest
+
+    npx knex migrate:make create_incidents
+    edit -> generated file in src/database/migrations/20200.._create_incidents.js
+    npx knex migrate:latest
+
+    npm knex for help
+
+
 
 ## Front-end
 
 ### Commands
 
     npx create-react-app frontend
+
+
+<hr>
+
+### Break
+
+<a href="https://www.youtube.com/watch?time_continue=1839&v=GfnWvNSWMZE&feature=emb_logo">Continue now (51:00)</a>
