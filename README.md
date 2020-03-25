@@ -10,6 +10,7 @@
 
     mkdir backend
     cd backend
+    npm init -y
     npm install (necessary modules)
     npm install knex
     npm install sqlite3
@@ -39,4 +40,3 @@
 ### Commands
 
     npx create-react-app frontend
-    
