@@ -62,6 +62,22 @@
 
 <hr>
 
-### Break
+## MOBILE
 
-<a href="https://www.youtube.com/watch?time_continue=1839&v=GfnWvNSWMZE&feature=emb_logo">Continue now (51:00)</a>
+    npm install -g expo-cli
+    expo -h
+    expo init mobile
+    cd mobile
+    yarn start
+
+
+> https://reactnavigation.org/docs/getting-started/
+
+#### React Navigation
+
+    npm install @react-navigation/native
+    expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+    npm install @react-navigation/stack
+    npm install constants
+    npm install expo-mail-composer
+
